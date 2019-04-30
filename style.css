@@ -1,0 +1,192 @@
+
+body {
+    background-color: #1e273f;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+a {
+    color: #ffffff;
+}
+
+.hytale-navbar {
+    border-top: 2px solid #15243a;
+    border-right: 2px solid #15243a;
+    border-bottom: 2px solid #15243a;
+    border-left: 2px solid #15243a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #4e5765;
+    flex: 1 0 0;
+    position: relative;
+    height: 3em;
+    margin: 1.6em 0 0 0;
+    padding: 0 0 0 .5em;
+    border-width: 1px;
+    border-radius: 5px;
+    background: #203658;
+    font-size: .9em;
+}
+
+.hytale-navbar li {
+    line-height: 2.7em;
+    color: #b7cedd;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.hytale-navbar li a {
+    padding: 0 0.5em;
+    color: #f5fbff;
+    text-transform: uppercase;
+    line-height: 3em;
+    font-weight: 600;
+}
+
+.hytale-navbar li a:hover {
+    color: #b7cedd;
+    text-decoration: none;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 2px;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 0;
+    background: #816632;
+    cursor: pointer;
+}
+
+.button__topDecorations::before {
+    top: 4px;
+    left: 4px;
+}
+.button__topDecorations::after {
+    top: 4px;
+    right: 4px;
+    transform: rotate(90deg);
+}
+.button__bottomDecorations::before {
+    bottom: 4px;
+    left: 4px;
+    transform: rotate(-90deg);
+}
+.button__bottomDecorations::after {
+    right: 4px;
+    bottom: 4px;
+    transform: rotate(180deg);
+}
+.button__inner {
+    display: block;
+    position: relative;
+    border-radius: 3px;
+    padding: 2px;
+}
+.button__inner__label {
+    display: block;
+    position: relative;
+    z-index: 101;
+    padding: 0 1.6em 0 1.6em;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 2.6;
+    height: 2.6em;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.button__inner__highlight {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 177, 103, 0.45);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.08));
+    padding: .5em 1.6em;
+}
+.button__inner__highlight, .button__inner:before, .button__inner:after {
+    display: block;
+    opacity: 0;
+    transition: opacity .08s;
+    will-change: opacity;
+}
+.button--primary .button__inner {
+    background: linear-gradient(to bottom, #3c91c5, #225b8b);
+    box-shadow: inset 0 0 0 2px #060b11;
+}
+
+.button--small {
+    font-size: .7em;
+    padding: 2px !important;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.button--secondary .button__inner {
+    background: linear-gradient(to bottom, #262d35, #121519);
+    box-shadow: inset 0 0 0 2px #060b11, inset 0 0 0 3px rgba(127, 100, 49, 0.3);
+}
+.button--secondary .button__inner:before {
+    background: linear-gradient(to right, rgba(35, 45, 65, 0.7), rgba(35, 45, 65, 0));
+}
+.button--secondary .button__inner:after {
+    background: linear-gradient(to left, rgba(35, 45, 65, 0.7), rgba(35, 45, 65, 0));
+}
+
+section h2, h2 {
+    font-size: 1.5em;
+    color: #d29f32;
+}
+
+section h3 {
+    font-size: 1.3em;
+    color: #d29f32;
+}
+
+header {
+    background: #15243a;
+    border-bottom: 1px solid #715e2b;
+    text-align: center;
+}
+
+header h1 {
+    color: #f5fbff;
+    text-transform: uppercase;
+    background: linear-gradient(#f5fbff, #bfe6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    padding: 0.5em 0.5em 0.3em 0.5em;
+    font-weight: bold;
+}
+
+section.row {
+    border-top: 2px solid #15243a;
+    border-right: 2px solid #15243a;
+    border-bottom: 2px solid #15243a;
+    border-left: 2px solid #15243a;
+    margin: 1.6em 0 0 0;
+    padding: 1.6em .6em 1.6em .6em;
+    border-width: 1px;
+    border-radius: 5px;
+    background: #203658;
+    font-size: .9em;
+    color: #a5b9c6;
+}
+
+footer {
+    margin-top: 20px;
+    background: #15243a;
+    border-bottom: 1px solid #715e2b;
+    text-align: center;
+    padding: 40px 40px 30px 40px;
+    letter-spacing: 1.4px;
+    font-size: 0.7em;
+    color: #a5b9c6;
+}

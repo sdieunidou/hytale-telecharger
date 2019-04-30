@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule	^hytale$	hytale.html	[L]
+RewriteRule	^faq$	faq.html	[L]
+RewriteRule	^choisir-hebergeur$	choisir-hebergeur.html	[L]
+RewriteRule	^location-hytale$	location-hytale.html	[L]
+RewriteRule	^location-minecraft$	location-minecraft.html	[L]
+RewriteRule	^ajouter-hebergeur-hytale$	ajouter-hebergeur-hytale.html	[L]
+RedirectPermanent /contact /
+RedirectPermanent /hebergeur-top-hytale /
